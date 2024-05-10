@@ -1,3 +1,4 @@
+
 import Color from './Color'
 
 const colors = [{
@@ -19,9 +20,6 @@ const colors = [{
 
 export default function ColorRenderer () {
   return (
-    <div>
-      {colors.map(color => <Color key={color.hex} hex={color.hex} name={color.name}/>)}
-      )
-    </div>
-  )
+    <div>{colors.map(color => <Color key={color.hex} hex={color.hex} name={color.name}/>)}</div>    
+    )
 }
